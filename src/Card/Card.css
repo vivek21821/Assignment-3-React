@@ -1,0 +1,76 @@
+.moviecontainer {
+  display: flex;
+  padding: 0% 5%;
+  grid-gap: 0.2em;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+div {
+  color: rgb(245, 245, 245);
+  text-align: center;
+}
+.moviecontainer .moviecard {
+  text-align: center;
+  background-color: rgb(14, 14, 14);
+  margin: 15px 15px;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.3s ease-in;
+  width: 17%;
+  border-bottom: 2px solid transparent;
+}
+.moviecontainer .moviecard:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  border-bottom: 2px solid rgb(116, 114, 114);
+}
+.moviecontainer .moviecard img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.moviecontainer .moviecard h3 {
+  color: rgb(204, 200, 200);
+  margin: 0;
+  padding: 0px;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.moviecontainer .moviecard .moviedesc {
+  padding: 5px 12px 12px;
+  position: relative;
+}
+
+
+.searchcontainer {
+  margin: 0 14%;
+  margin-bottom: 40px;
+}
+.searchcontainer input {
+  width: 100%;
+  border-radius: 0px;
+  border: none;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: none;
+  height: 34px;
+  padding: 10px;
+}
+.searchcontainer input:focus-visible {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+@media (max-width: 798px) {
+  .moviecontainer {
+    padding: 15px;
+  }
+  .moviecontainer .moviecard {
+    width: 40%;
+  }
+}
